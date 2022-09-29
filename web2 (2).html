@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>
+        cab booking
+    </title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+    one{
+        background-color: black;
+        align-items: top;
+        align-content: top;
+        color: bisque;
+        text-align: center;
+    }
+header{
+    color:antiquewhite;
+    background-color:black;
+    text-align: center;
+    font-size: 30px;
+    position: top;
+}
+nav{
+    text-align: right;
+   float: right;
+   display: block;
+   text-decoration:darkcyan;
+   padding: 30px;
+   font-size: 20px;
+   color: black;
+   overflow: hidden;
+}
+ul {
+  list-style-type:none;
+  margin: 10px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display:ruby-base;
+  color: black;
+  text-align: center;
+  padding: 70px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+li a:hover:not(.active) {
+  background-color:lightgreen;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+dv{
+    border-radius: 70px;
+    padding: 15px;
+    font-size: 30px;
+    font-style: bold;
+    width: 30%;
+}
+#rcorners2 {
+  border-radius: 70px;
+  border: 2px solid #73AD21;
+  padding: 50px; 
+  width: 25%;
+  height:150%;  
+  margin-top: 8%;
+  margin-left: 65%;
+
+}
+input{
+    border-radius: 70px;
+    padding: 15px;
+    font-size: 30px;
+    border-color: aquamarine;
+    font-style: italic;
+    
+}
+label{
+    font-size: 30px;
+}
+select{
+    width: 45%;
+            padding: 10px;
+        font-size:20px;
+}
+input[type="submit"]{
+    background-color: #73AD21;
+}
+
+    </style>
+</head>
+<body>
+    <header>OnEwAy</header>
+<div class="one">
+    <nav>
+       <ul> 
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">ROUTES</a></li>
+            <li><a href="#">TARIFF</a></li>
+                <li><a href="#">HOME</a></li>
+       </ul>
+    </nav>
+</div>
+
+<form id="rcorners2"><div>
+    <label for="pick up at"></label>
+    <input type="text number" id="pick up at" name="pick up at" placeholder="PICK UP"><br>
+    <br>
+    <label for="drop at"></label>
+    <input type="text number" id="drop at" name="drop at" placeholder="DROP"><br><br>
+    <label for="date">Date and Time:</label>
+    <input type="datetime-local" id="date" name="date"><br><br>
+    <label for="trip type">Trip type:</label>
+
+    <select id="trip type" name="trip type">
+        <option value="round trip">ROUND TRIP</option>
+        <option value="oneway">ONEWAY</option>
+    
+    </select><br><br>
+    <label for="car category">Car category</label>
+    <select id="car category" name="car category">
+        <option value="mini">MINI</option>
+        <option value="sedan">SEDAN</option>
+        <option value="suv">SUV</option>
+    </select>
+    
+    <br><br>
+    <label for="contact number">Contact Number:</label>
+    <input type="numbers" id="contact number" name="contact number"><br>
+    <br>
+    
+ <input type="submit" formaction="one.php">
+
+</form>
+</div>
+<br>
+
+</body>
+
+</html>
